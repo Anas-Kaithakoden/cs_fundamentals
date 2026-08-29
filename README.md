@@ -1,2 +1,178 @@
 # cs_fundamentals
 Instead of framing other frameworks and technologies i have decided to move to core CS topics like DSA and system design, This repo will record my journey of learning them
+
+## The overall strategy
+
+| Track                 | Main goal                                          |
+| --------------------- | -------------------------------------------------- |
+| **DSA**               | Pass coding rounds                                 |
+| **CS Fundamentals**   | Pass technical/theory rounds                       |
+| **System/OOP Design** | Handle design questions                            |
+| **Practical Systems** | Be able to reason about real backend/cloud systems |
+
+
+### Month 1 — Complexity + Core DSA
+* Big-O
+* arrays
+* strings
+* linked lists
+* stacks
+* queues
+* hash tables
+
+### Month 2 — Algorithms + Trees
+* binary search
+* sorting
+* recursion
+* backtracking
+* trees
+* BST
+* heaps
+* graph 
+
+### Month 3 — Advanced DSA + OOP
+* graph algorithms
+* greedy
+* DP
+* OOP
+* composition/inheritance
+* SOLID
+* design pattern
+
+### Month 4 — OS + continued DSA
+* processes
+* threads
+* scheduling
+* synchronization
+* deadlocks
+* memory
+* virtual memory
+* filesystems
+* Linux
+
+### Month 5 — DBMS + Networking + Linux
+* SQL
+* indexes
+* transactions
+* isolation
+* DNS
+* TCP/IP
+* HTTP
+* TLS
+* Linux
+* SSH
+* shell
+
+### Month 6 — Interview Mode
+This is where everything comes together.
+* DSA:
+    - mixed problems
+    - timed problems
+    - mock coding interviews
+    - weak-topic revision
+
+* CS:
+    - OS questions
+    - DBMS questions
+    - networking
+    - OOP
+    - Linux
+    - concurrency
+
+* System Design:
+    - URL shortener
+    - chat
+    - file storage
+    - feed
+    - food delivery backend
+
+* Practical:
+    - explain your projects
+    - explain architecture
+    - explain technical decisions
+    - debug scenarios
+
+
+          ┌──────────────┐
+          │    LEARN     │
+          └──────┬───────┘
+                 ↓
+          ┌──────────────┐
+          │  UNDERSTAND  │
+          └──────┬───────┘
+                 ↓
+          ┌──────────────┐
+          │  IMPLEMENT   │
+          └──────┬───────┘
+                 ↓
+          ┌──────────────┐
+          │    SOLVE     │
+          └──────┬───────┘
+                 ↓
+          ┌──────────────┐
+          │   EXPLAIN    │
+          └──────┬───────┘
+                 ↓
+          ┌──────────────┐
+          │     TEST     │
+          └──────┬───────┘
+                 ↓
+          ┌──────────────┐
+          │    REVIEW    │
+          └──────────────┘
+                 │
+                 └──→ next concept
+
+
+#### Give you an unfamiliar LeetCode Medium-style problem.
+Understand problem
+      ↓
+Ask clarifying questions
+      ↓
+Identify pattern
+      ↓
+Develop brute force
+      ↓
+Improve it
+      ↓
+Write clean code
+      ↓
+Test edge cases
+      ↓
+Explain correctness
+      ↓
+Give time + space complexity
+
+## Journey
+### Month 1 — Complexity + Core DSA
+#### Module 1: Time & Space Complexity   [29-08-26]
+Time complexity = how the number of operations performed by an algorithm grows as the input size n grows.
+Space complexity = how much additional memory an algorithm needs as the input size n grows.
+	​
+Fast
+ ↓
+O(1)
+ ↓
+O(log n)
+ ↓
+O(n)
+ ↓
+O(n log n)
+ ↓
+O(n²)
+ ↓
+O(2ⁿ)
+ ↓
+O(n!)
+Slow
+
+| Complexity   | What is happening?                                  |
+| ------------ | --------------------------------------------------- |
+| `O(1)`       | Work doesn't grow with `n`                          |
+| `O(log n)`   | Problem shrinks/grows exponentially                 |
+| `O(n)`       | Process each item once                              |
+| `O(n log n)` | `n` work repeated over `log n` levels               |
+| `O(n²)`      | Every item interacts with every item                |
+| `O(2ⁿ)`      | Each additional input roughly doubles possibilities |
+| `O(n!)`      | Number of possible arrangements explodes            |
+
