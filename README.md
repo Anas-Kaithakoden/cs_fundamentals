@@ -143,9 +143,67 @@ Explain correctness
       ↓
 Give time + space complexity
 
+1. Arrays
+   ├── Brute Force
+   ├── Hashing
+   ├── Two Pointers
+   ├── Sliding Window
+   ├── Prefix Sum
+   ├── Binary Search
+   └── Kadane
+
+2. Linked Lists
+   ├── Fast/Slow Pointers
+   ├── Reversal
+   ├── Dummy Node
+   └── Merge
+
+3. Stack / Queue
+   ├── Stack
+   ├── Monotonic Stack
+   └── BFS
+
+4. Trees
+   ├── DFS
+   ├── BFS
+   ├── BST
+   └── Tree recursion
+
+5. Heaps
+   ├── Top K
+   ├── Kth element
+   └── Two Heaps
+
+6. Graphs
+   ├── DFS/BFS
+   ├── Cycle Detection
+   ├── Topological Sort
+   ├── Union-Find
+   └── Shortest Path
+
+7. Backtracking
+   ├── Subsets
+   ├── Permutations
+   └── Combinations
+
+8. Greedy
+
+9. Dynamic Programming
+   ├── 1D
+   ├── 2D
+   ├── Knapsack
+   ├── Subsequence
+   └── State-based
+
+10. Advanced
+    ├── Trie
+    ├── Segment Tree
+    ├── Fenwick
+    └── Advanced Graph/DP
+
 ## Journey
 ### Month 1 — Complexity + Core DSA
-#### Module 1: Time & Space Complexity   [29-08-26]
+#### Module 1: Time & Space Complexity                                  [29-08-26]
 Time complexity = how the number of operations performed by an algorithm grows as the input size n grows.
 Space complexity = how much additional memory an algorithm needs as the input size n grows.
 	​
@@ -175,4 +233,14 @@ Slow
 | `O(n²)`      | Every item interacts with every item                |
 | `O(2ⁿ)`      | Each additional input roughly doubles possibilities |
 | `O(n!)`      | Number of possible arrangements explodes            |
+
+#### Module 2: Arrays & Strings                                         [30-08-26]  
+address(arr[i]) = base_address + i × element_size
+
+When you see a problem that asks you to calculate something about every element, your first thought should often be:
+"Can I solve this with one traversal and O(1) extra space?"
+eg: Find an element, Find maximum, Find minimum, Count occurrences
+##### Methods:
+Brute force- O(n²) time, O(1) space
+Two pointers- O(n) time, O(1) space
 
