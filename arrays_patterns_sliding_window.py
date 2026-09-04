@@ -21,7 +21,7 @@ def sum_subarray():
 # Variable-size-window
 def sum_longest_contiguous_subarray():
     arr = [2, 1, 5, 2, 3, 2]
-    target = 7    
+    target = 7    # length of the longest contiguous subarray whose sum is ≤ target.
     window_sum = 0
 
     left = 0
@@ -40,7 +40,7 @@ def sum_longest_contiguous_subarray():
 
 def sum_shortest_contiguous_subarray():
     arr = [2, 3, 1, 2, 4, 3]
-    target = 7
+    target = 7      # minimum length of a contiguous subarray whose sum is ≥ target
     window_sum = 0
 
     left = 0

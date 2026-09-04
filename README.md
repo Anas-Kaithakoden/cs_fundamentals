@@ -14,11 +14,11 @@ Instead of framing other frameworks and technologies i have decided to move to c
 ### Month 1 — Complexity + Core DSA
 * Big-O
 * arrays
+* hash tables
 * strings
 * linked lists
 * stacks
 * queues
-* hash tables
 
 ### Month 2 — Algorithms + Trees
 * binary search
