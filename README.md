@@ -145,10 +145,10 @@ Give time + space complexity
 
 1. Arrays
    ├── Brute Force
-   ├── Hashing
    ├── Two Pointers
    ├── Sliding Window
    ├── Prefix Sum
+   ├── Hashing
    ├── Binary Search
    └── Kadane
 
@@ -234,13 +234,35 @@ Slow
 | `O(2ⁿ)`      | Each additional input roughly doubles possibilities |
 | `O(n!)`      | Number of possible arrangements explodes            |
 
-#### Module 2: Arrays & Strings                                         [30-08-26]  
+#### Module 2: Arrays & Strings                                         [30-08-26 -- 04-09-26]  
 address(arr[i]) = base_address + i × element_size
 
 When you see a problem that asks you to calculate something about every element, your first thought should often be:
-"Can I solve this with one traversal and O(1) extra space?"
+"Can I solve this with one traversal [O(n)] and O(1) extra space?"
 eg: Find an element, Find maximum, Find minimum, Count occurrences
 ##### Methods:
 Brute force- O(n²) time, O(1) space
 Two pointers- O(n) time, O(1) space
+Sliding window-  O(n) time, O(1) space
+prefix- O(n)[quering- O(1)] time, O(n) space 
+
+
+#### Module 2: Sets and Hash maps                                      [05-09-26]  
+So a set is particularly useful when our main question is:
+"Have I seen this value before?"
+rather than:
+"Where is this value?"
+
+The hash function helps determine where a value belongs in the underlying hash table.
+insert → O(1) average
+search → O(1) average
+delete → O(1) average
+
+Hash Set = fast membership / existence checking.
+--------------------------------------
+      Array:                              
+            index → value
+      Hash Set:
+            value → existence
+--------------------------------------
 
