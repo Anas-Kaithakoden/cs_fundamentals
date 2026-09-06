@@ -248,6 +248,7 @@ prefix- O(n)[quering- O(1)] time, O(n) space
 
 
 #### Module 2: Sets and Hash maps                                      [05-09-26]  
+##### Hash Sets
 So a set is particularly useful when our main question is:
 "Have I seen this value before?"
 rather than:
@@ -266,3 +267,11 @@ Hash Set = fast membership / existence checking.
             value → existence
 --------------------------------------
 
+##### Hash maps
+-------------------------------------------------------
+A Set essentially answers:
+      Does this value exist?
+A Hash Map lets us answer:
+      What information is associated with this value?
+-------------------------------------------------------
+freq[x] = freq.get(x, 0) + 1
