@@ -36,9 +36,24 @@ def prefix_longest_subarray_sum(nums, target):
 
     return longest
 
+def number_of_contiguous_subarrays(nums, target):
+    seen = {0: 1}
+    prefix = 0
+    count = 0
+
+    for num in nums:
+
+        prefix += num
+        needed = prefix-target
+        if needed in seen:
+            count += seen[needed]
+
+        seen[prefix] = seen.get(prefix, 0) + 1
+
+    return count
 
 
-
-print(prefix_longest_subarray_sum(nums = [2, 3, -2, 4, 1], target = 5))
+print(number_of_contiguous_subarrays(nums = [1, 2, 1, 2, 1], target = 3))
+# print(prefix_longest_subarray_sum(nums = [2, 3, -2, 4, 1], target = 5))
 # print(two_sum([5, 1, 8, 6, 3], 9))
 # count_frequency()
